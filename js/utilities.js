@@ -50,7 +50,7 @@ function checks(donation,donationFund,place,type) {
 
     if (isNaN(donateAmount) || donateAmount <= 0) {
         donation.value = '';
-        alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
+        alert("Invalid Donation amount. Please enter a valid donation amount. The minimum donation amount is 1 BDT.");
         return;
     } 
 
