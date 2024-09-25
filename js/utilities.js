@@ -1,6 +1,6 @@
 
 
-//DOM Elements 
+//DOM Elements by using custom functions which returns ID_____Reusable Functions: two-and-half (three)----at bottom
 const donateBtn = idElement('donate-btn');
 const historyBtn = idElement('history-btn');
 
@@ -23,6 +23,8 @@ const aidAmount = idElement('aid-input');
 
 
 const currentBalance = idElement('available-balance');
+
+const myModal = idElement('my_modal_5');
 
 
 //Reusable Functions-One: Adds notification cards of Donation Date and time with place and reason or causes for the donation____used and called inside check function 
@@ -48,7 +50,7 @@ function checks(donation,donationFund,place,type) {
 
     if (isNaN(donateAmount) || donateAmount <= 0) {
         donation.value = '';
-        alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1BDT");
+        alert("Invalid Donation amount. Please Input valid donation amount. Minimum Donate amount 1 BDT");
         return;
     } 
 
@@ -63,7 +65,7 @@ function checks(donation,donationFund,place,type) {
         donation.value = '';
         const time = new Date();
         newHistory(donateAmount,time,place,type);//calling Reusable Function-One
-        alert("Donate Successful");
+        myModal.showModal();
        
     }
 

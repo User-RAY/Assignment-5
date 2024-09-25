@@ -51,7 +51,7 @@ noakhaliBtn.addEventListener('click', function(){
 
 
     checks(noakhaliAmount,noakhaliFund,'Noakhali','flood');
-
+    
 });
 
 

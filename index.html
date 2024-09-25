@@ -91,6 +91,8 @@
                         <input id="noakhali-input" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-full my-6 text-center lg:text-left">
                         <button id="noakhali-btn" class="btn bg-btn-color w-full font-semibold hover:bg-btn-color/[.8] text-xl text-black">Donate Now</button>
                         
+                       
+
                     </div>
                 </div>
 
@@ -133,6 +135,22 @@
                         
                     </div>
                 </div>
+
+                 <!-- modal -->
+                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box flex flex-col justify-between items-center">
+                      <h1 class="font-bold text-center text-2xl mb-2">Congrats!</h1>
+                      <img src="assets/coin.png" alt="coins">
+                      <p class="py-4">You Have Donated for HumanKind</p>
+                      <h3 class="text-lg font-bold text-center">Successfully</h3>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <!-- if there is a button in form, it will close the modal -->
+                          <button class="btn ">Close Confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                </dialog>
 
         </div>
 
